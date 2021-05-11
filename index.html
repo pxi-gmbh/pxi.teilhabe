@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>pipfy</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- while in DEV, separate styling concerns into stylesheets -->
+    <link rel="stylesheet" href="_styles/reset.css">
+    <link rel="stylesheet" href="_styles/global.css">
+    <link rel="stylesheet" href="_styles/helper.css">
+    <link rel="stylesheet" href="_styles/app.css">
+
+  </head>
+  <body>
+    <main id="main" role="main">
+    	<article>
+        <nav id="nav--menu">
+        </nav>
+
+        <div>
+    		    <h2 id="teilhabe-20210505">eine Einführung</h2>
+
+    		    <p><em>Dies ist ein erster Entwurf. Wir laden herzlich dazu ein, hier mit zu schreiben <span class="js--teilhabe-email">teilhabe [at] leitfaden-fernarbeit.de</span>. Insbesondere Menschen mit Behinderung, für die wir gerne mehr Barrieren in Online-Veranstaltungen abbauen wollen.</em></p>
+
+    		    <p>Online-Konferenzen und Seminare können Teilhabe für mehr Menschen möglich machen. Sie können Barrieren abbauen, die in Präsenz-Veranstaltungen entstehen. Dafür müssen wir allerdings dafür sorgen, dass wir in den neu geschaffenen Räumen online, nicht neue Barrieren aufbauen, die Menschen von Teilhabe ausschließen.</p>
+
+    		    <p>Erschwerend für die Gestaltung der Online-Erlebnisse kommt hinzu, dass wir uns in fremdem Räumen bewegen. Wir sind gebunden an die technischen Rahmen-Bedingungen, die Microsoft Teams, Zoom, Jitsi und andere Software uns vorgeben.</p>
+
+    		    <p>Dies ist eine Kurz-Übersicht, wie Sie helfen können, Ihre Online-Angebote in diesen Räumen einladender und interaktiver zu gestalten.</p>
+
+    		    <h3 id="dasminimalismus-setup">Das Minimalismus-Setup</h3>
+
+    		    <p>Konferenz-Software beschränkt die Auflösung für Videos und macht Text unleserlich. Außer beim Bildschirm teilen. Das nutzen wir aus und machen den geteilten Bildschirm zur Leinwand, auf der wir unser Video, interaktive Elemente und Hilfe-Stellungen für Barriere-Freiheit anordnen. <label for="aside--es-gibt-zoom" class="aside-toggle" role="button" aria-pressed="false" aria-label="Randbemerkung anzeigen" onkeypress="toggleButtonKeyPress()" onclick="toggleButtonClick()" tabindex="0">⨭ …</label></p>
+
+    		    <input id="aside--es-gibt-zoom" type="checkbox" class="aside-toggle"/>
+
+    		    <p><strong>Tipp:</strong> es gibt bei Zoom einen Trick für echtes HD im Video-Bild: Im Menü für Bildschirm-Teilen unter fortgeschrittenen Optionen eine [zweite Kamera] auswählen - dort dann einfach die eigene Webcam wählen.</p>
+
+    		    <figure>
+    		    <img src="kacheln.png" alt="Desktop mit Video-Bild eines Präsentators, Präsentation im Fenster, Untertitel und Menü mit Signalen und Zeit-Anzeige" />
+    		    <figcaption>Desktop mit Video-Bild eines Präsentators, Präsentation im Fenster, Untertitel und Menü mit Signalen und Zeit-Anzeige</figcaption>
+    		    </figure>
+
+    		    <p>Wir empfehlen vier Grund-Elemente nach einfacher Hierarchie für Aufmerksamkeit zu arrangieren:</p>
+
+    		    <ol>
+    		    <li>Was es zu zeigen gibt. Präsentation im Fenstermodus, Browser-Fenster, Whiteboard. Die visuelle Hilfe-Stellung, worüber geredet wird, sollte den größten Raum einnehmen und gemäß der Lese-Richtung links oben platziert werden.</li>
+    		    <li>Wer etwas sagt. Das Video-Bild der sprechenden Person sollte möglichst mit dem gezeigten interagieren können. Rechts oben platziert wird ein Blick nach links (womöglich auf den Bildschirm) als Blick auf das Vorzeige-Element gelesen und lenkt die Aufmerksamkeit. Tipp: <a href="https://pipfy.pxi.gmbh">pipfy - Webcam im Browser-Fenster</a></li>
+    		    <li>Meta-Information. Zeit-Anzeige, Sprecher*Innen-Name oder Kontext-Info, vielleicht aber auch visuelle Signale oder ein Chat-Fenster worüber das Publikum mit den Inhalten interagieren kann. Tipp: <a href="https://compad.pxi.gmbh">compad - Rück-Kanal im Browser-Fenster</a></li>
+    		    <li>Unterstützung für Barriere-Freiheit. Automatische Untertitel, eventuell auch Gebärden-Sprachen-Übersetzung in einem zusätzlichen Video-Bild mit einer zweiten Webcam im Browser-Fenster. Tipp: <a href="https://caption.ninja">caption.ninja - automatische Untertitel mit Google Chrome Browser</a> dort im automatisch erzeugten Link &#8220;&amp;lang=en-US&#8221; durch &#8220;&amp;lang=de&#8221; ersetzen.</li>
+    		    </ol>
+
+    		    <p>Web-Apps im Browser sind das Werkzeug, mit dem ganz ohne Installation von Software Interaktion möglich wird. Viele Apps synchronisieren Interaktion zwischen den Teilnehmenden. So können Sie Medien-Brüche vermeiden. <label for="aside--ms-office" class="aside-toggle" role="button" aria-pressed="false" aria-label="Randbemerkung anzeigen" onkeypress="toggleButtonKeyPress()" onclick="toggleButtonClick()" tabindex="0">⨭ …</label></p>
+
+    		    <input id="aside--ms-office" type="checkbox" class="aside-toggle"/>
+
+    		    <p>Dahin gehen, wo das Publikum ist, bedeutet, dessen Software-Beschränkungen anzunehmen. Zoom ist nun einmal Standard, genau wie das Microsoft-Universum an vielen Orten Bedingung ist. Microsoft immerhin ist vorbildhaft beim Thema Barriere-Freiheit. Untertitel gibt es in PowerPoint integriert. Mit der Translator-App auch als eigene App mit noch mehr Funktionalität.</p>
+
+    		    <p>Für Barriere-Freiheit gibt es weit mehr zu bedenken als nur Untertitel anzubieten. Auch finanzielle Hürden oder erzwungener Lern-Aufwand und Beschränkung auf geschlossene Software-Ökosysteme erschwert Teilhabe.</p>
+
+    		    <p>Wir werden an dieser Stelle noch konkretere Hilfs-Angebote vorstellen. Vielleicht wird auch ein Manifest daraus. <label for="aside--ein-paar-prinzipien" class="aside-toggle" role="button" aria-pressed="false" aria-label="Randbemerkung anzeigen" onkeypress="toggleButtonKeyPress()" onclick="toggleButtonClick()" tabindex="0">⨭ …</label></p>
+
+    		    <input id="aside--ein-paar-prinzipien" type="checkbox" class="aside-toggle"/>
+
+    		    <ul>
+    		    <li>agnostische Formate wählen: Entwickeln wir Lösungen, die auf jeder Plattform funktionieren, damit wir zu unserem Publikum gehen können, wo immer es sich aufhält.</li>
+    		    <li>Lernkurven und Installations-Zwang vermeiden: Bürden wir dem Publikum so wenig Technik wie möglich auf.</li>
+    		    <li>Profis professionalisieren: Geben wir den Veranstaltenden Anleitungen und Werkzeug an die Hand, wie sie mit etwas Mehr-Aufwand Aufwand und Barrieren für ihr Publikum abbauen.</li>
+    		    <li>Medien-Brüche vermeiden: Führen wir interaktive Elemente zurück in den zentralen Begegnungs-Raum.</li>
+    		    </ul>
+
+    		    <p>Grundsätzlich ist es ein Vorteil für alle Teilnehmenden, Barrieren abzubauen. Das Stichwort hierzu: <a href="https://en.wikipedia.org/wiki/Curb_cut_effect">Curb-Stone-Effect (englisch)</a>. Oder auch Bordstein-Kanten-Absenkungs-Effekt?</p>
+
+    		    <p>Wir richten unsere Arbeit zu Barriere-Freiheit anhand der Prinzipien funktioneller Beschränkung aus. Behinderung als soziale Kategorie hat einen anderen Fokus. Funktional behindert können nämlich auch nicht-behinderte Menschen sein: Beim Blick in die tief stehende Sonne sind alle Menschen seh-behindert.</p>
+
+    		    <p>Um so wertvoller ist die Expertise und Erfahrung behinderter Menschen, funktionale Barrieren zu erkennen und zu beheben.</p>
+
+    		    <hr />
+
+    		    <p>Für professionelle Produktion empfehlen wir, eine Regie einzurichten und darüber noch mehr Interaktion, aber auch die Videos und andere Beiträge der Teilnehmenden in einem einladenden Erlebnis zu vereinigen. Tipp: <a href="https://obsproject.com">Open Broadcaster Software</a></p>
+
+    		    <p>Hintergründe, wie Sie Zoom-Fatigue mit interaktiven Formaten begegnen, wie Sie konkrete Hilfe-Stellungen zur Barriere-Freiheit entwickeln und detailliertere Anleitungen reichen wir nach.</p>
+
+        </div>
+    	</article>
+
+    </main>
+    <footer>
+      <div class="intro">
+        <p lang="en">a floating webcam image for screen recordings.</p>
+      </div>
+      <section id="about" class="is-modal">
+        <button class="button--secondary" onclick="toggleAbout();">
+          <span lang="en">close</span>
+        </button>
+        <div lang="de">
+          <h3>how to use</h3>
+          <p><strong>pipfy</strong> can help you put a video image of yourself on your desktop. helpful for screen recordings and screen sharing in video conferencing software. no app download needed. just click <strong>capture video</strong> and grant your browser permission to access the camera. there is no server involved: the feed is only running on your computer.</p>
+          <p>thanks to the <strong>picture-in-picture</strong> browser technology you can arrange your video on your screen right along the software or presentation you want to share. the video will float above all other windows. even above a presentation running in full screen, if you enable the hover effect after starting presentation mode.</p>
+          <p>you can flip the image so the video works like a mirror. this should help orient yourself to interact with things on your screen. it makes pointing at things with your video image much easier.</p>
+          <p>you can crop the webcam to arrange the windows on your desktop in a helpful setup. we prefer to use our webcam in portrait mode to give more room to other elements on the screen.</p>
+          <p>you can run several instances in seperate browser tabs. you will need to connect multiple webcams. this way you could put a speaker and a sign language translator on the desktop in a live recording or streaming session.</p>
+          <p><strong>browser quirks:</strong> this uses quite recent browser technology. not all browsers behave as expected. <strong>do not run the camera in an inactive browser tab</strong> to keep the feed running smoothly. instead use a single, open browser window for each instance. the window does not need to be in focus, but it should not be minimized. works best in google chrome.</p>
+          <hr>
+          <p>the <a href="./audiobridge.html"><strong>audiobridge</strong></a> is another accessibility hack: you can use it to route your microphone input to a browser window in chrome and use the captioning API to generate automatic subtitles. disable sound output from the browser tab (right click) to avoid echoes.</p>
+          <p>thanks. practice solidarity, stay positive. you got this.</p>
+          <p>made with care and too little time from your friendly design lab at <a src="https://agentur.pxi.gmbh"><strong>pxi</strong>|lab<a> (currently in german only).</p>
+        </div>
+      </section>
+      <button class="button--secondary" onclick="toggleAbout();">
+        <span lang="en">how to use</span>
+      </button>
+      <div id="imprint">
+        <p lang="de"><a href="https://github.com/pxi-gmbh/teilhabe">Open Source</a>. <a href="https://agentur.pxi.gmbh/">Impressum: <strong>pxi</strong>❘design</a>.</p>
+      </div>
+    </footer>
+
+
+    		<!-- JavaScript and libraries -->
+    		<script src="/_scripts/help.js"></script>
+        <script>window.onload = myEmail();</script>
+    		<script>window.onload = frameBreaker();</script>
+
+    	</body>
+  <script type="text/javascript" src="help.js"></script>
+</html>
