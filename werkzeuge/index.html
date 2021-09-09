@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, viewport-fit=cover">
+  <meta name="description" content="Sammlung an verschiedenen Hilfsmitteln für Barrierefreiheit im Alltag" />
+  <meta name="author" content="pxi.gmbh" />
+
+  <link rel="stylesheet" href="index.css" />
+
+  <title>Sammlung an Hilfsmitteln für Barrierefreiheit</title>
+  <meta name="title" content="Sammlung an Hilfsmitteln für Barrierefreiheit" />
+  <meta name="description" content="Sammlung an verschiedenen Hilfsmitteln für Barrierefreiheit im Alltag"/>
+  <meta name="image" content="social-media-image.png">
+
+  <meta itemprop="name" content="Sammlung an Hilfsmitteln für Barrierefreiheit">
+  <meta itemprop="description" content="Sammlung an verschiedenen Hilfsmitteln für Barrierefreiheit im Alltag">
+  <meta itemprop="image" content="social-media-image.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Sammlung an Hilfsmitteln für Barrierefreiheit">
+  <meta name="twitter:description" content="Sammlung an verschiedenen Hilfsmitteln für Barrierefreiheit im Alltag">
+  <meta name="twitter:image:src" content="social-media-image.png">
+
+  <meta name="og:title" content="Sammlung an Hilfsmitteln für Barrierefreiheit">
+  <meta name="og:description" content="Sammlung an verschiedenen Hilfsmitteln für Barrierefreiheit im Alltag">
+  <meta name="og:type" content="website">
+  <meta name="og:image" content="social-media-image.png">
+  <meta name="og:url" content="https://teilhabe.pxi.design/werkzeuge">
+  <meta name="og:site_name" content="Sammlung an Hilfsmitteln für Barrierefreiheit">
+
+  <link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+</head>
+
+<body>
+  <header>
+    <a class="skip-link" href="#main">zum Haupt-Inhalt springen</a>
+    <a href="https://agentur.pxi.gmbh/" aria-label="pxi-lab-homepage"><img id="pxi-logo" src="img/pxi-lab.svg"></a>
+
+    <div id="toggle--theme">
+      <button type="button" theme-toggle="light" aria-label="switch to light mode"><img src="img/light-button.svg" alt="light icon" theme-toggle="light"></button>
+      <button type="button" theme-toggle="dark" aria-label="switch to dark mode"><img src="img/dark-button.svg" alt="dark icon" theme-toggle="dark"></button>
+    </div>
+    <script type="text/javascript">
+      // toggle--theme (light/dark)
+      (function() {
+        var buttonsTheme = document.querySelectorAll('button[theme-toggle]');
+        for (var i = 0; i < buttonsTheme.length; i++) {
+
+          buttonsTheme[i].addEventListener('click', function(event) {
+            event.preventDefault();
+            console.log("click");
+            document.querySelector('html').setAttribute(
+              'theme',
+              event.target.getAttribute('theme-toggle'));
+            },
+            false);
+          }
+        })();
+    </script>
+
+    <div class="warning">
+      Wir sind immer auf der Suche nach Ergänzungen für die Sammlung. Hinweise gerne umgehend an: lab [at] pxi.design
+    </div>
+    <hgroup>
+      <h1>Sammlung an Hilfsmitteln für Barrierefreiheit</h1>
+    </hgroup>
+  </header>
+
+  <main id="main">
+    <section> <!-- filter element -->
+      <div class="toggle--switch" style="float: none;">
+        <span id="filter-categories--label">Kategorien filtern</span>
+        <button role="switch" aria-checked="false" aria-labelledby="filter-categories--label" onclick="if(this.getAttribute('aria-checked') == 'false'){this.setAttribute('aria-checked', 'true');}else{this.setAttribute('aria-checked', 'false');}">
+          <span>an</span>
+          <span>aus</span>
+        </button>
+
+        <div id="filter-categories">
+          <h4>Kategorien: aktiv</h4>
+          <div id="filter-categories--active" class="flex-grid">
+
+          </div>
+          <hr>
+          <h4>Kategorien: nicht aktiv</h4>
+          <div id="filter-categories--inactive" class="flex-grid">
+            <button aria-checked="false" class="button--primary" activate-class="tag--kostenpflichtig">kostenpflichtig</button>
+            <button aria-checked="false" class="button--primary" activate-class="tag--kostenlos">kostenlos</button>
+            <button aria-checked="false" class="button--primary" activate-class="tag--design">design</button>
+            <button aria-checked="false" class="button--primary" activate-class="tag--entwicklung">entwicklung</button>
+            <button aria-checked="false" class="button--primary" activate-class="tag--organisation">organisation</button>
+            <button aria-checked="false" class="button--primary" activate-class="tag--erleben-besuchen">erleben & besuchen</button>
+            <button aria-checked="false" class="button--primary" activate-class="tag--Webservice">webservice</button>
+            <button aria-checked="false" class="button--primary" activate-class="tag--App">app</button>
+          </div>
+        </div>
+
+        <div class="warning">
+          Wähle eine Kategorie, um passende Ergebnisse zu sehen.
+        </div>
+
+        <ul>
+          <li class="filter-card tag--erleben-besuchen tag--kostenlos tag--App ">
+            <p><small>Besser/es Sehen, Hören</small></p>
+            <h4>Android-Tools zur Barrierefreiheit</h4>
+            <p>Sammlung von Funktionen, die die Bedienung von Android-Geräten erleichtern.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback">https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback</a>
+            <p><small>Erleben & Besuchen  • App • Navigation • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--erleben-besuchen tag--kostenlos tag--App ">
+            <p><small>Besser/es Sehen, Verständnis</small></p>
+            <h4>Apple Screen Reader</h4>
+            <p>Der VoiceOver-Bildschirmleser von Apple-Geräten, der beschreibt, was auf dem Bildschirm geschieht. </p>
+            <a href="https://support.apple.com/de-de/guide/voiceover/welcome/10">https://support.apple.com/de-de/guide/voiceover/welcome/10</a>
+            <p><small>Erleben & Besuchen  • App • Sprachausgabe • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--erleben-besuchen tag--kostenlos tag--App ">
+            <p><small>Besser/es Hören</small></p>
+            <h4>Audioverstärker</h4>
+            <p>App zur Verbesserung der Audioausgabe von Android-Geräten. Sie ermöglicht, Geräusche zu filtern, anzureichern und zu verstärken.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier">https://play.google.com/store/apps/details?id=com.google.android.accessibility.soundamplifier</a>
+            <p><small>Erleben & Besuchen  • App • Video / Audioplayer • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--erleben-besuchen tag--kostenlos tag--App ">
+            <p><small>Besser/es Hören, Verständnis</small></p>
+            <h4>Automatische Transkription Google App</h4>
+            <p>App zur automatischen Sprach- und Geräuscherkennung, die Unterhaltungen als Text auf dem Bildschirm anzeigt.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.google.audio.hearing.visualization.accessibility.scribe&hl=de&gl=US">https://play.google.com/store/apps/details?id=com.google.audio.hearing.visualization.accessibility.scribe&hl=de&gl=US</a>
+            <p><small>Erleben & Besuchen  • App • Untertitlung • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--kostenpflichtig tag--design tag--entwicklung tag--undefined tag--App ">
+            <p><small>Besser/es Sehen</small></p>
+            <h4>axesPDF</h4>
+            <p>Konfigurationstool für barrierefreie PDF Dokumenten aus Microsoft Word.</p>
+            <a href="https://www.axes4.com/axespdf-for-word-overview.html">https://www.axes4.com/axespdf-for-word-overview.html</a>
+            <p><small>Entwicklung, Design  • App • Barrierefreie Dokumente / Layouts erstellen • €€</small></p>
+          </li>
+
+          <li class="filter-card tag--design tag--entwicklung tag--organisation tag--erleben-besuchen tag--kostenlos tag--App ">
+            <p><small>Besser/es Sehen, Orientierung</small></p>
+            <h4>Blindsquare</h4>
+            <p>GPS-App für blinde und sehbehinderte Menschen, die die Umgebung mit Sprachausgabe beschreibt.</p>
+            <a href="https://www.blindsquare.com/">https://www.blindsquare.com/</a>
+            <p><small>Organisation, Entwicklung, Design, Erleben & Besuchen  • App • Navigation • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--kostenpflichtig tag--design tag--entwicklung tag--undefined tag--App ">
+            <p><small>Besser/es Sehen, Fühlen, Reize, Wahrnehmung</small></p>
+            <h4>ColorSay</h4>
+            <p>Mit der Kamera von Apple-Mobilgeräten Farben scannen, die die App dann hörbar macht.</p>
+            <a href="https://apps.apple.com/de/app/colorsay-hor-die-welt-in-farbe/id605398028">https://apps.apple.com/de/app/colorsay-hor-die-welt-in-farbe/id605398028</a>
+            <p><small>Entwicklung, Design  • App • Sprachausgabe • €</small></p>
+          </li>
+
+          <li class="filter-card tag--organisation tag--kostenlos tag--App ">
+            <p><small>Besser/es Fühlen, Reize, Wahrnehmung</small></p>
+            <h4>Emma Notruf App</h4>
+            <p>App, um einen Notruf ohne Sprachanruf abzusetzen.</p>
+            <a href="http://www.emma-notruf-app.de/">http://www.emma-notruf-app.de/</a>
+            <p><small>Organisation  • App • Navigation • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--kostenpflichtig tag--organisation tag--undefined tag--App ">
+            <p><small>Besser/es Sehen, Orientierung</small></p>
+            <h4>Frauenhofer FOKUS Indoor Navigation</h4>
+            <p>Leitsystem, das es ermöglicht, in Gebäuden mittels Smartphone App zu navigieren.</p>
+            <a href="https://www.fokus.fraunhofer.de/go/indoor-navigation">https://www.fokus.fraunhofer.de/go/indoor-navigation</a>
+            <p><small>Organisation  • App • Navigation / Orientierung • €€€€€</small></p>
+          </li>
+
+          <li class="filter-card tag--erleben-besuchen tag--kostenlos tag--App ">
+            <p><small>Besser/es Sehen</small></p>
+            <h4>Greta App</h4>
+            <p>Audiodeskriptionen und Untertitel für Kinofilme, die auf dem eigenen Smartphone angezeigt werden.</p>
+            <a href="https://www.gretaundstarks.de/greta/">https://www.gretaundstarks.de/greta/</a>
+            <p><small>Erleben & Besuchen  • App • Audiodeskription • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--organisation tag--erleben-besuchen tag--kostenlos tag--Webservice ">
+            <p><small>Besser/es persönliche Assistenz</small></p>
+            <h4>Kenn Dich</h4>
+            <p>Soziales Netzwerk für behinderte und nicht behinderte Menschen.</p>
+            <a href="https://kenndich.de/">https://kenndich.de/</a>
+            <p><small>Organisation, Erleben & Besuchen  • Webservice • Vernetzung • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--erleben-besuchen tag--kostenlos tag--App ">
+            <p><small>Besser/es Sehen, Mobilität</small></p>
+            <h4>LipSurf</h4>
+            <p>Browser-Erweiterung, die es ermöglicht, den Chrome-Browser mit Sprachbefehlen zu steuern.</p>
+            <a href="https://www.lipsurf.com/">https://www.lipsurf.com/</a>
+            <p><small>Erleben & Besuchen  • App • Navigation • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--erleben-besuchen tag--kostenlos tag--App ">
+            <p><small>Besser/es Hören, Verständnis</small></p>
+            <h4>Live Transcribe</h4>
+            <p>Live-Transkription auf Android-Geräten.</p>
+            <a href="https://www.android.com/accessibility/live-transcribe/">https://www.android.com/accessibility/live-transcribe/</a>
+            <p><small>Erleben & Besuchen  • App • Textausgabe • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--erleben-besuchen tag--kostenlos tag--App ">
+            <p><small>Besser/es Sehen, Hören, Sprechen</small></p>
+            <h4>Lorm Lern App</h4>
+            <p>App zum Erlernen des Lormen-Alphabets, das Menschen mit Hör- und Seheinschränkung hilft sich zu verständigen.</p>
+            <a href="https://www.szblind.ch/hilfsmittel/digital-tools/lern-lormen-app">https://www.szblind.ch/hilfsmittel/digital-tools/lern-lormen-app</a>
+            <p><small>Erleben & Besuchen  • App • Dolmetschung • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--erleben-besuchen tag--kostenlos tag--App ">
+            <p><small>Besser/es Sehen</small></p>
+            <h4>SeeingAI</h4>
+            <p>Beschreibt die unmittelbare Umgebung.</p>
+            <a href="https://www.microsoft.com/en-us/ai/seeing-ai">https://www.microsoft.com/en-us/ai/seeing-ai</a>
+            <p><small>Erleben & Besuchen  • App • Sprachausgabe • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--design tag--entwicklung tag--kostenlos tag--Webservice ">
+            <p><small>Besser/es Sehen</small></p>
+            <h4>Sim Daltonism</h4>
+            <p>Farben so visualisieren, wie sie bei verschiedenen Arten von Farbenblindheit wahrgenommen werden.</p>
+            <a href="https://michelf.ca/projects/sim-daltonism/">https://michelf.ca/projects/sim-daltonism/</a>
+            <p><small>Entwicklung, Design  • Webservice • Barrierefreie Dokumente / Layouts erstellen • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--kostenpflichtig tag--organisation tag--undefined tag--App ">
+            <p><small>Besser/es Hören</small></p>
+            <h4>Spread Signs</h4>
+            <p>Großes internationales Gebärdensprachlexikon mit über 200 000 Gebärden.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.spreadthesign.androidapp_paid&hl=de&gl=US">https://play.google.com/store/apps/details?id=com.spreadthesign.androidapp_paid&hl=de&gl=US</a>
+            <p><small>Organisation  • App • Dolmetschung • €</small></p>
+          </li>
+
+          <li class="filter-card tag--organisation tag--erleben-besuchen tag--kostenlos tag--Webservice ">
+            <p><small>Besser/es Mobilität</small></p>
+            <h4>Wheelmap</h4>
+            <p>Karte mit gut zugänglichen, barrierearmen Orten für in der Mobilität eingeschränkte Menschen.</p>
+            <a href="https://wheelmap.org/">https://wheelmap.org/</a>
+            <p><small>Erleben & Besuchen, Organisation  • Webservice • Navigation • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--design tag--entwicklung tag--kostenlos tag--Webservice ">
+            <p><small>Besser/es Sehen</small></p>
+            <h4>Who can use</h4>
+            <p>Bewertungstool der Kontrastratio für verschiedene Arten der Sehbehinderung.</p>
+            <a href="https://whocanuse.com/">https://whocanuse.com/</a>
+            <p><small>Entwicklung, Design  • Webservice • Barrierefreie Dokumente / Layouts erstellen • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--organisation tag--kostenlos tag--App ">
+            <p><small>Besser/es Verständnis</small></p>
+            <h4>VotAR</h4>
+            <p>Tool für Abstimmungen mittels Farben.</p>
+            <a href="https://tooldoku.dbjr.de/beteiligungswerkzeuge/votar/manual/">https://tooldoku.dbjr.de/beteiligungswerkzeuge/votar/manual/</a>
+            <p><small>Organisation  • App • Wahl / Abstimmung • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--design tag--entwicklung tag--undefined tag--Webservice ">
+            <p><small>Besser/es Sehen</small></p>
+            <h4>Farbkontrastrechner</h4>
+            <p>Kontrastrechner zur Berechnung und Überprüfung barrierefreier Farbkombinationen.</p>
+            <a href="https://www.leserlich.info/werkzeuge/kontrastrechner/index.php">https://www.leserlich.info/werkzeuge/kontrastrechner/index.php</a>
+            <p><small>Entwicklung, Design  • Webservice • Barrierefreie Dokumente / Layouts erstellen • Konstenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--organisation tag--kostenlos tag--Webservice ">
+            <p><small>Besser/es Hören</small></p>
+            <h4>pipfy captions</h4>
+            <p>Sprache-zu-Text-Generierung für Bildschirmaufnahmen oder Videokonferenzen.</p>
+            <a href="https://pipfy.pxi.design/captions.html">https://pipfy.pxi.design/captions.html</a>
+            <p><small>Organisation  • Webservice • Audiotranskription • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--design tag--entwicklung tag--kostenlos tag--Webservice ">
+            <p><small>Besser/es Verständnis</small></p>
+            <h4>Hemingway App</h4>
+            <p>Hilfe beim Verfassen von klarsprachigen englischen Texten.</p>
+            <a href="https://hemingwayapp.com/">https://hemingwayapp.com/</a>
+            <p><small>Entwicklung, Design  • Webservice • Texte verfassen • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--design tag--kostenlos tag--Webservice ">
+            <p><small>Besser/es Sehen, Verständnis</small></p>
+            <h4>Iconoir</h4>
+            <p>Große Auswahl an klaren Icons, die zur Unterstützung von Text eingesetzt werden können.</p>
+            <a href="https://iconoir.com/">https://iconoir.com/</a>
+            <p><small>Design  • Webservice • Barrierefreie Dokumente / Layouts erstellen • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--design tag--kostenlos tag--Webservice ">
+            <p><small>Besser/es Sehen, Verständnis</small></p>
+            <h4>Health Icons</h4>
+            <p>Icons aus dem Gesundheitssektor, die zur Unterstützung von Text eingesetzt werden können.</p>
+            <a href="https://healthicons.org/">https://healthicons.org/</a>
+            <p><small>Design  • Webservice • Barrierefreie Dokumente / Layouts erstellen • Kostenlos</small></p>
+          </li>
+
+          <li class="filter-card tag--kostenpflichtig tag--erleben-besuchen tag--undefined tag--App ">
+            <p><small>Besser/es Sehen</small></p>
+            <h4>KNFB Reader</h4>
+            <p>App zur Texterkennung u.a. mit den Funktionen Text-in-Sprache, Text-in-Braille und Hervorheben von Text.</p>
+            <a href="https://apps.apple.com/de/app/knfbreader/id849732663">https://apps.apple.com/de/app/knfbreader/id849732663</a>
+            <p><small>Erleben & Besuchen  • App • Sprachausgabe • €€€</small></p>
+          </li>
+
+          <li class="filter-card tag--gratis tag--erleben-besuchen tag--undefined tag--App ">
+            <p><small>Besser/es Hören, Verständnis</small></p>
+            <h4>Hearthstone-Access</h4>
+            <p>Mod für das Spiel "Hearthstone" (Englisch), damit das Spiel auch per Screen-Reader spielbar wird.</p>
+            <a href="https://hearthstoneaccess.github.io/">https://hearthstoneaccess.github.io/</a>
+            <p><small>Erleben & Besuchen  • App • Sprachausgabe • Kostenlos</small></p>
+          </li>
+
+
+        </ul>
+        <script type="text/javascript">
+          (function(){
+            const filterCategories = document.getElementById("filter-categories");
+            const filterCategoriesActive = document.getElementById("filter-categories--active");
+            const filterCategoriesInactive = document.getElementById("filter-categories--inactive");
+            const warning = filterCategories.parentElement.querySelector(".warning");
+            let warningDone = false;
+            let filterItems = Array.from(filterCategoriesActive.getElementsByClassName(
+              'button--primary'
+            )).concat(Array.from(filterCategoriesInactive.getElementsByClassName(
+              'button--primary'
+            )));
+            for (var i = 0; i < filterItems.length; i++) {
+              filterItems[i].activateClassRule = document.createElement("style");
+              filterItems[i].activateClassRule.innerHTML = (
+                'button[aria-checked="true"] ~ ul > li.'
+                + filterItems[i].getAttribute("activate-class")
+                + "{display:block}"
+              );
+              filterItems[i].addEventListener("click", function() {
+                if (warningDone === false){
+                  warningDone = true;
+                  warning.style.display = "none";
+                }
+                let pressed = this.getAttribute("aria-checked") === "true";
+                this.setAttribute("aria-checked", !pressed);
+                if (pressed === true){
+                  filterCategoriesActive.removeChild(this);
+                  filterCategoriesInactive.appendChild(this);
+                  document.head.removeChild(this.activateClassRule);
+                }else{
+                  filterCategoriesInactive.removeChild(this);
+                  filterCategoriesActive.appendChild(this);
+                  document.head.appendChild(this.activateClassRule);
+                }
+              })
+            }
+          })()
+        </script>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <hr>
+    <section class="flex-grid" id="about">
+      <p>Kostenlos. Keine Installation. Keine Anmeldung.
+        Aber du kannst uns <a href="https://gumroad.com/l/compad-cards" target="_blank">einen Kaffee spendieren</a>. Danke.
+      </p>
+      <form action="https://mail.pxi.gmbh/sendy/subscribe" method="POST" accept-charset="utf-8">
+        <label for="about--email" class="is-invisible">Neuigkeiten</label>
+        <input type="email" name="email" id="about--email" required placeholder="deine@email.de">
+        <button type="submit" name="submit">abonnieren</button>
+        <br>
+        <div style="display:none;">
+        	<label for="hp">HP</label><br/>
+        	<input type="text" name="hp" id="hp"/>
+      	</div>
+        <label>
+          <input type="checkbox" name="gdpr" required id="gdpr">
+          Ich möchte Neuigkeiten von <code><strong>pxi</strong></code> erhalten und bin einverstanden mit
+        </label> <span><a href="#imprint" onclick="getElementById('imprint').setAttribute('open', true);">den Bedingungen</a></span>
+        <input type="hidden" name="list" value="K6XGJHWQ4XmVUsKM892EuIIw"/>
+      	<input type="hidden" name="subform" value="yes"/>
+      </form>
+    </section>
+
+    <details class="imprint" id="imprint">
+      <summary role="button" onclick="if(!this.parentElement.hasAttribute('open')){setTimeout(function(){window.scrollBy(0,150);},50);this.parentElement.setAttribute('aria-expanded','true')}else{this.parentElement.setAttribute('aria-expanded','false')}">
+        Impressum & Datenschutz
+      </summary>
+      <div class="flex-grid">
+        <div>
+          <p>
+            &copy; <span id="current-year"></span> &mdash;
+            <script>// show current year
+              document.getElementById("current-year").innerHTML = new Date().getUTCFullYear();
+            </script>
+            pixelcraft innovation GmbH
+            <br>Karl-Heine-Straße 99 | 04229 Leipzig
+            <br>GF Jakob Jochmann (ViSdP)
+            <br>HRB 29619 | Leipzig | UstID DE291272096
+            <br>+49 152 27094501 | <span aria-label="write us an email" class="js--email">lab [at] pxi.design</span>
+          </p>
+        </div>
+        <div>
+          <p>Wir leben Daten-Souveränität: Kein Tracking, kein Quatsch, du bestimmst. Wenn du unsere E-Mmails abonnierst, kannst du deine Einwilligung jederzeit widerrufen. Puff. Siehe unsere ausführliche Erläuterung <a href="https://github.com/pxi-gmbh/pipfy/blob/main/legal.md">Nutzungs-Bedingungen & Datenschutz-erklärung</a></p>
+        </div>
+      </div>
+    </details>
+  </footer><!-- ./ Footer -->
+</body>
+</html>
