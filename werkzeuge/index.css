@@ -1483,6 +1483,104 @@ nav[aria-label="language selection"] > a:first-of-type{
     pointer-events: auto;
   }
 
+  /* ========================================================================== */
+  /* * TOGGLE BUTTONS * */
+  /* ========================================================================== */
+  /*  TOC
+      - toggle switch: button for on/off
+      - toggle radio: button-group that allows just one selection
+      - toggle theme: fixed UI-component to control dark mode
+   */
+
+
+
+  /* * TOGGLE SWITCH * */
+  /* ========================================================================== */
+  /* with accessibility onclick script for toggling state aria-checked */
+  /*
+    component floats. adjust or add a clearfix element if needed
+    we use a button element for its built in semantic properties of on/off
+   */
+  /*
+    <div class="toggle--switch">
+      <span id="...--label">...</span>
+      <button role="switch" aria-checked="true" aria-labelledby="...--label" onclick="if(this.getAttribute('aria-checked') == 'false'){this.setAttribute('aria-checked', 'true');}else{this.setAttribute('aria-checked', 'false');}">
+        <span>on</span>
+        <span>off</span>
+      </button>
+    </div>
+   */
+
+  .toggle--switch {
+    float: right;
+  }
+
+  .toggle--switch button[role="switch"] {
+    font-size: calc(var(--type-scale--small) * 0.8);
+    padding: .3rem .1rem;
+  }
+
+  .toggle--switch button[role="switch"] * {
+    color: var(--color--background);
+    padding: .35rem;
+    margin: 0;
+    border-radius: var(--border-radius--pronounced);
+  }
+
+  .toggle--switch button[role="switch"][aria-checked="true"] :first-child,
+  .toggle--switch button[role="switch"][aria-checked="false"] :last-child {
+    background: var(--color--text);
+  }
+
+  .toggle--switch button[role="switch"][aria-checked="true"] {
+    background: var(--color--contrast);
+  }
+  .toggle--switch button[role="switch"][aria-checked="true"] :last-child {
+    color: var(--color--contrast);
+  }
+
+
+
+  /* * TOGGLE RADIO * */
+  /* ========================================================================== */
+
+  /* reset fieldset styling and keep this all on a single line */
+  .toggle--radio {
+    display: inline-block;
+    padding: 0;
+    border-radius: var(--border-radius--pronounced);
+  }
+
+  .toggle--radio:focus-within {
+    border-color: var(--color--focus);
+  }
+
+  .toggle--radio label {
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+    padding: calc(var(--vertical-rhythm) / 2);
+    margin: 0;
+  }
+
+  .toggle--radio label:not(:first-of-type) {
+    border-left: var(--border-width--default) solid currentColor;
+  }
+
+  /*  inputs set to opcacity 0 are still accessible. */
+  .toggle--radio input {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .toggle--radio input ~ span {
+    border-top: var(--border-width--default) solid currentColor;
+  }
+
+  .toggle--radio input:checked ~ span {
+    border-top: var(--border-width--default) solid var(--color--contrast);
+  }
+
 
 /* * FILTER * */
 
