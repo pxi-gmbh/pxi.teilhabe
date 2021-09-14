@@ -1391,7 +1391,7 @@ nav[aria-label="language selection"] > a:first-of-type{
 
   #about button {
     font-weight: bold;
-    width: 35%;
+    /* width: 35%; */
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -1605,8 +1605,10 @@ nav[aria-label="language selection"] > a:first-of-type{
   padding-left:  var(--type-scale--1);
 }
 #filter-categories>.flex-grid>button {
+  width: unset;
   flex-grow: 0;
   flex-basis: content;
+  -webkit-flex-basis: auto;
 }
 #filter-categories--active button{
   background-color: var(--color--contrast);
